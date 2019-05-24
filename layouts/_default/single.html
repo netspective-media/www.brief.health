@@ -2,6 +2,9 @@
 <html lang="{{ .Site.LanguageCode }}" dir="ltr">
   {{ partial "head.html" . }}
   <body class="single-body">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W476329" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     {{ partial "nav-bar.html" . }}
     <main class="content side-text-padding">
       <article class="post {{ if ne .Params.dropcap false }}dropcase{{ end }}">
@@ -32,7 +35,7 @@
           <i class="fas fa-envelope"></i>
         </a>
         </div>
-        Continue reading at <a href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
+        Continue reading at <a href="{{ .Params.link }}" target="_blank">{{ .Params.linkBrand }}</a>
         {{ if (isset .Params "categories") }} | {{ range .Params.categories }}<a class="category" href="/categories/{{ . | urlize }}">#{{ . }}</a> {{ end }}{{ end }}        
         {{ $related := .Site.RegularPages.Related . | first 5 }}
         {{ with $related }}
