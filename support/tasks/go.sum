@@ -40,6 +40,8 @@ github.com/lectio/resource v0.0.0-20190517204755-9aeb4e95c938/go.mod h1:c82gS6Ee
 github.com/lectio/resource v0.0.0-20190519022640-f60af9ad6c81/go.mod h1:EoEtIXX2xInL5Lz1P2cPiypELT0MYRRsTAeQ2hCR/NY=
 github.com/lectio/resource v0.0.0-20190520235426-9f95474d1b29 h1:FfFWbqyBZ8F7OXoW4P0eH3x3cIyS5c5YIMqFDTE7UJU=
 github.com/lectio/resource v0.0.0-20190520235426-9f95474d1b29/go.mod h1:Z+ZSWvraM1mFWMwY9tzCj+/ydeKwUFNrB5RNe7oDDhU=
+github.com/lectio/resource v0.0.0-20190524200617-96910fee2dab h1:DXYDjbBDR3gszOjgxDaeUdcbNKxtc/6pCYjHTMiZGK0=
+github.com/lectio/resource v0.0.0-20190524200617-96910fee2dab/go.mod h1:Z+ZSWvraM1mFWMwY9tzCj+/ydeKwUFNrB5RNe7oDDhU=
 github.com/lectio/score v0.0.0-20190514191559-a6158be8f1eb h1:TUJ9Ubr9xAj2p+m69R59O6E7qvZOzXE2M3j4IBNh2Co=
 github.com/lectio/score v0.0.0-20190514191559-a6158be8f1eb/go.mod h1:qBOo9jDPABUWQSbDNQOyCaah+WdZ2NYL3bUrmxxy8ZE=
 github.com/lectio/secret v0.0.0-20190429145409-ad908f31d07d h1:XxcZkJEafCCl7Zu0hWxK+AUuuPrnz8Y6m8qWMCwqOXo=
@@ -48,6 +50,7 @@ github.com/lectio/text v0.0.0-20190515234148-8228ca3bb319 h1:ikWB9NAV6/8Z58HK1SK
 github.com/lectio/text v0.0.0-20190515234148-8228ca3bb319/go.mod h1:siNUKh+YQ0ZqUXi/8s2ccP28zh+N3AvxMDYXcgzbWzY=
 github.com/mattn/go-colorable v0.1.1 h1:G1f5SKeVxmagw/IyvzvtZE4Gybcc4Tr1tf7I8z0XgOg=
 github.com/mattn/go-colorable v0.1.1/go.mod h1:FuOcm+DKB9mbwrcAfNl7/TZVBZ6rcnceauSikq3lYCQ=
+github.com/mattn/go-colorable v0.1.2/go.mod h1:U0ppj6V5qS13XJ6of8GYAs25YV2eR4EVcfRqFIhoBtE=
 github.com/mattn/go-isatty v0.0.5/go.mod h1:Iq45c/XA43vh69/j3iqttzPXn0bhXyGjM0Hdxcsrc5s=
 github.com/mattn/go-isatty v0.0.7 h1:UvyT9uN+3r7yLEYSlJsbQGdsaB/a0DlgWP3pql6iwOc=
 github.com/mattn/go-isatty v0.0.7/go.mod h1:Iq45c/XA43vh69/j3iqttzPXn0bhXyGjM0Hdxcsrc5s=
@@ -81,7 +84,10 @@ golang.org/x/sys v0.0.0-20190412213103-97732733099d/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/sys v0.0.0-20190516110030-61b9204099cb/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20190520201301-c432e742b0af h1:NXfmMfXz6JqGfG3ikSxcz2N93j6DgScr19Oo2uwFu88=
 golang.org/x/sys v0.0.0-20190520201301-c432e742b0af/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20190522044717-8097e1b27ff5 h1:f005F/Jl5JLP036x7QIvUVhNTqxvSYwFIiyOh2q12iU=
 golang.org/x/sys v0.0.0-20190522044717-8097e1b27ff5/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20190524152521-dbbf3f1254d4 h1:VSJ45BzqrVgR4clSx415y1rHH7QAGhGt71J0ZmhLYrc=
+golang.org/x/sys v0.0.0-20190524152521-dbbf3f1254d4/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.2 h1:tW2bmiBqwgJj/UpqtC8EpXEZVYOwU0yG4iWbprSVAcs=
 golang.org/x/text v0.3.2/go.mod h1:bEr9sfX3Q8Zfm5fL9x+3itogRgK3+ptLWKqgva+5dAk=
@@ -89,6 +95,7 @@ golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGm
 golang.org/x/tools v0.0.0-20190517183331-d88f79806bbd/go.mod h1:RgjU9mgBXZiqYHBnxXauZ1Gv1EHHAz9KjViQ78xBX0Q=
 golang.org/x/tools v0.0.0-20190520220859-26647e34d3c0/go.mod h1:RgjU9mgBXZiqYHBnxXauZ1Gv1EHHAz9KjViQ78xBX0Q=
 golang.org/x/tools v0.0.0-20190521203540-521d6ed310dd/go.mod h1:RgjU9mgBXZiqYHBnxXauZ1Gv1EHHAz9KjViQ78xBX0Q=
+golang.org/x/tools v0.0.0-20190524184802-d487f80763e2/go.mod h1:RgjU9mgBXZiqYHBnxXauZ1Gv1EHHAz9KjViQ78xBX0Q=
 golang.org/x/xerrors v0.0.0-20190513163551-3ee3066db522 h1:bhOzK9QyoD0ogCnFro1m2mz41+Ib0oOhfJnBp5MR4K4=
 golang.org/x/xerrors v0.0.0-20190513163551-3ee3066db522/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=

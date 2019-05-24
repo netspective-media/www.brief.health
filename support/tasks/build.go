@@ -30,10 +30,6 @@ func basePath(executablePath string) (string, error) {
 }
 
 func main() {
-	// ex, err := os.Executable()
-	// if err != nil {
-	// 	panic(err)
-	// }
 	_, filename, _, ok := runtime.Caller(0)
 	if !ok {
 		fmt.Println("Unable to get name of executable go file")
@@ -45,10 +41,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("Configured basePath: %s.\n", basePath)
+	fmt.Printf("Configured basePath: %s\n", basePath)
 
 	ctx := context.Background()
-
 	bpc := markdown.NewBasePathConfigurator(basePath)
 	linkFactory := link.NewFactory()
 
