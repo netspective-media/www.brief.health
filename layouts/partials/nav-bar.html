@@ -1,11 +1,18 @@
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W476329"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="container">
 <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="{{ .Site.BaseURL }}" class="nav-text">
+  <!-- <h1 class="nav-header"><a href="{{ .Site.BaseURL }}" class="nav-text">
     {{- if isset $.Site.Params "brand"}}
       {{- $.Site.Params.brand -}}
     {{ else }}
       {{- $.Site.Title -}}
     {{ end -}}
-  </a></h1>
+  </a></h1> -->
+   <h1 class="nav-header"><a href="{{ .Site.BaseURL }}" class="nav-text"><img src="/img/logo.png" alt="" class="img-responsive"></a></h1>
   <div class="hamburger-menu">
     <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
       <span></span>
@@ -22,3 +29,49 @@
     </ul>
   </div>
 </nav>
+
+<div class="b-t-1 menu-bg">
+<div class="col-lg-9 col-md-8 col-sm-7 main-nav">
+<nav class="navbar navbar-default">
+ <!-- <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+ 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="{{ .Site.BaseURL }}">Home <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+      {{ range $key, $value := .Site.Taxonomies.categories -}}
+          
+      <li><a href="{{ (printf "%s%s" "categories/" ($key | urlize)) | absURL }}" class="hamburger-menu-overlay-link">{{ $key | humanize }}</a></li>
+      {{- end }}  
+           
+          </ul>
+        </li>
+      </ul>
+
+
+    </div>
+    -->
+</nav>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-5">
+<div class="pull-right owned">
+          <div class="pull-right text-left">Curated and published by <br>
+            <a href="http://shahidshah.com/" target="blank">@ShahidNShah</a> </div>
+          <div class="pull-right"><img src="/img/shahid-sha.png" width="40"></div>
+          <div class="clear-fix"></div>
+        </div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+
