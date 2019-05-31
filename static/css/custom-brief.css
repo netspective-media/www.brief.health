@@ -11,7 +11,7 @@ a {
 }
 a:hover {
 	text-decoration: none!important;
-    color: #000!important;
+    color: #2280cf!important;
 }
 img {
     display: inline-block!important;
@@ -100,8 +100,8 @@ img {
 }
 .hamburger-menu-overlay-link {
     text-transform: capitalize!important;
-    font-size: 16px!important;
-    line-height: 23px!important;
+    font-size: 20px!important;
+    line-height: 30px!important;
     color: #fff!important;
 }
 .hamburger-menu-overlay {
@@ -114,13 +114,16 @@ img {
     color: #000000!important;
 }
 .hamburger-menu button {
-    width: 22px;
+    width: 50px;
     height: 25px;
-    margin-top: 7px;
+    margin-top: 12px;
 }
 .hamburger-menu button span {
-    width: 22px;
-    background-color: #8cbbe2;
+    width: 50px;
+    background-color: #1b639e;
+}
+.hamburger-menu button span:first-of-type {
+    margin-bottom: 7px;
 }
 .post-title {
     font-size: 2.0em!important;
@@ -165,9 +168,6 @@ img {
     width: 100%!important;
     max-width: 60%!important;
 }
-
-
-
 /* 31.05.19 */
 .nav-bar {
     display:inherit!important;
