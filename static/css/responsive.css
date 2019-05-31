@@ -13,7 +13,11 @@
 @media (max-width:1040px) {
 }
 @media (max-width:991px) {
+.hamburger-menu {
+    margin-top: -85px;
+}    
 }
+
 @media (max-width:800px) {
 }
 @media (max-width:767px) {
@@ -49,6 +53,16 @@
 }
 
 @media (max-width:375px) {
+.hamburger-menu button {
+    width: 30px;
+    margin-top: 8px;
+}
+.hamburger-menu button span {
+    width: 30px;
+}  
+.hamburger-menu button span:first-of-type {
+    margin-bottom: 4px;
+}  
 }
 
 @media (max-width:320px) {
