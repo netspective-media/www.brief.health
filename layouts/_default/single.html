@@ -14,7 +14,7 @@
         </header>
         {{ if isset .Params "featuredimage" }}
         <picture class="post-figure m-b-15">
-            <a href="{{ .Params.link }}"><img src="{{.Params.featuredimage | absURL }}" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}></a>
+            <a href="{{ .Params.link }}" target="_blank"><img src="{{.Params.featuredimage | absURL }}" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}></a>
         </picture>
         {{ end }}
         {{ .Content }}
