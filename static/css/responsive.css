@@ -21,6 +21,10 @@
 @media (max-width:800px) {
 }
 @media (max-width:767px) {
+.cover-content {
+    margin-top: -140px;
+    padding: 30px;
+}
 }
 
 @media (max-width:640px) { /* Mobile */
@@ -36,16 +40,27 @@
 .post-title {
     font-size: 1.5em!important;
 }
+.cover-content {
+    margin-top: -100px;
+}
 }
 
 @media (max-width:520px) {
 .owned {
     margin-right: 28%;
+}
+.cover-content {
+    margin-top: -75px;
 }    
 }
 
 @media (max-width:480px) {
+.cover-content {
+    width:90%;
+    padding: 20px 25px;
 }
+}
+
 @media (max-width:425px) {
 .owned {
     margin-right: 25%;
