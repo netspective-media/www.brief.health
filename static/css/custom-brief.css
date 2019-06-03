@@ -216,4 +216,5 @@ img {
     padding: 40px;
     border-radius: 3px;
     border: 1px solid #ededed;
+    min-height: 430px;
 }
