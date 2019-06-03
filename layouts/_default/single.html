@@ -48,6 +48,13 @@
         {{ end }}
       </article>
       {{ template "_internal/disqus.html" . }}
+      <h3 class="text-center next-ttl">Next Article</h3>
+        <nav class="side-padding">
+      {{ with .PrevInSection }}
+      {{ .Render "li-next" }}
+      {{ end }}
+      
+    </nav>
     </main>
    
     {{ partial "footer.html" . }}
