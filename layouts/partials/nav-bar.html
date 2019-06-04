@@ -90,4 +90,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="clearfix"></div>
 </div>
 
+<script type="text/javascript">
+ $(document).ready(function(){
+    var searchQuery = getUrlVars()["s"];
+    if(typeof(getUrlVars()["s"]) != 'undefined')
+    {
+      searchQuery = decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+      $('#search-query').val(searchQuery);
+    }
+  });
 
+
+</script>
