@@ -3,10 +3,11 @@
     <script src="/js/fuse_3.2.0.js"></script>
     <script src="/js/jquery_3.3.1_min.js"></script>
     <script src="/js/search.js"></script>
+    <script src="/js/infinity_scroll.js"></script>
   {{ partial "head.html" . }}
   <body>
     {{ partial "nav-bar.html" . }}
-     <main id = "search-results" class="">
+    <main id = "search-results" class="">
       <!--<header class="list-header">
         <p class="list-header-subtext">{{ .Description }}</p>
         <h1 class="list-header-title">{{ .Title }}</h1>
@@ -16,16 +17,23 @@
         {{ .Render "li" }}
       {{- end }}
     </main>
-    {{ if or ($paginator.HasPrev) ($paginator.HasNext) -}}
+
+     {{ if $paginator.HasNext }}
+      <input type="hidden" name="has_next" value="1" pagId="{{ $paginator.PageNumber }}" >
+    {{ end }}
+    <input type="hidden" name="pageId" value="{{ $paginator.PageNumber }}" >
+
+    <!-- {{ if or ($paginator.HasPrev) ($paginator.HasNext) -}}
     <nav class="pagination-nav side-padding">
       {{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}" class="pagination-newer">&lt; Newer Posts</a>{{ end }}
       {{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}" class="pagination-older">Older Posts &gt;</a>{{ end }}
     </nav>
-    {{ end -}}
+    {{ end -}} -->
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
   </body>
 </html>
+
 <script id="search-result-template" type="text/x-js-template">
   <div ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" class="card blog-card custom-card-row" rel="bookmark">
       ${ isset featuredimage }<div class="card-img-container"><picture><a href="${ link }"> <img src="${featuredimage}" class="card-img" {{ if isset .Params "featuredimagedescription" }}alt="${Params.featuredimagedescription}"{{end}}> </a></picture></div>${ end }
@@ -47,4 +55,16 @@
   </div>    
   </script>
 
- 
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    var searchQuery = getUrlVars()["s"];
+    if(typeof(getUrlVars()["s"]) != 'undefined')
+    {
+      searchQuery = decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+      $('#search-query').val(searchQuery);
+    }
+  });
+
+
+</script>

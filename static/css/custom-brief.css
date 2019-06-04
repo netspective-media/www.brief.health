@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 
 body {
-	font-family: 'Lato', sans-serif!important;
-	font-size:16px!important;
-	line-height:19px!important;
+    font-family: 'Lato', sans-serif!important;
+    font-size:16px!important;
+    line-height:19px!important;
     background: #f1faff url(../img/bg-pattern.jpg) repeat!important;
 }
 a {
     color: #333!important;
 }
 a:hover {
-	text-decoration: none!important;
-    color: #2280cf!important;
+    text-decoration: none!important;
+    color: #000!important;
 }
 img {
     display: inline-block!important;
@@ -55,7 +55,7 @@ img {
 }
 /* main-nav */
 .b-t-1 {
-    border-top: 2px solid #237fcf;    
+    border-top: 2px solid #e44417;    
 }
 .main-nav .navbar-default {
     background-color: inherit;
@@ -66,14 +66,14 @@ img {
     margin-bottom: 0px!important;
  }
  .main-nav .navbar-nav li a {
- 	font-size: 17px!important;
+    font-size: 17px!important;
     padding-left: 10px!important;
     padding-right: 10px!important;
     text-transform: inherit;
     color: #111!important;
 }
 .menu-bg {
-    background-color: rgba(175, 226, 249, 0.4);
+    /*background-color: rgba(253, 242, 239, 0.7);*/
     border-radius: 3px;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
@@ -107,7 +107,7 @@ img {
 .hamburger-menu-overlay {
     padding-left: 30px!important;
     list-style: none;
-    background-color: #2280cf;
+    background-color: #212121;
 }
 .hamburger-menu-overlay a:hover {
     text-decoration: none!important;
@@ -120,7 +120,7 @@ img {
 }
 .hamburger-menu button span {
     width: 50px;
-    background-color: #1b639e;
+    background-color: #5d5d5d;
 }
 .hamburger-menu button span:first-of-type {
     margin-bottom: 7px;
@@ -182,7 +182,7 @@ img {
     margin-top:4px;
 }
 #searchsubmit .input-group  .form-control {
-    height: 40px!important;
+    height: 39px!important;
     font-size: 16px!important;
     border: 1px solid #ccc!important;
     border-right:0px!important;
@@ -194,7 +194,7 @@ img {
 }
 #searchsubmit .input-group .fas {
     font-size: 17px;
-    color: #237fcf;
+    color: #555;
 }
 .card-bg {
      background-color: #f1f1f1!important;
