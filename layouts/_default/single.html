@@ -38,7 +38,7 @@
         </a>
         </div>
         <hr>
-        Continue reading at <a href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
+        Continue reading at <a target = "blank" href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
         {{ if (isset .Params "categories") }} | {{ range .Params.categories }}<a class="category" href="/categories/{{ . | urlize }}">#{{ . }}</a> {{ end }}{{ end }}        
         {{ $related := .Site.RegularPages.Related . | first 5 }}
         {{ with $related }}
