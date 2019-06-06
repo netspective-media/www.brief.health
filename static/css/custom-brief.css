@@ -190,7 +190,8 @@ img {
 }
 #searchsubmit .input-group .btn {
     border-left:0px!important;
-    padding: 9px 12px!important;   
+    padding: 9px 12px!important; 
+    background-color: #D3D3D3;  
 }
 #searchsubmit .input-group .fas {
     font-size: 17px;
