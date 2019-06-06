@@ -6,7 +6,7 @@ metaDataFormat = "yaml"
 paginate = 25
 
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS","JSON"]
 
 [params]
 brand = "Health IT Briefing"
