@@ -126,8 +126,8 @@ img {
     margin-bottom: 7px;
 }
 .post-title {
-    font-size: 2.0em!important;
-    font-weight: 700!important;
+    font-size: 1.6em!important;
+    font-weight: 500!important;
 }
 .detail-sm-block {
     margin-top:15px;
@@ -211,11 +211,11 @@ img {
 .cover-content {
     background-color: #fff!important;
     margin: 0 auto;
-    margin-top: -365px;
+    margin-top: -425px;
     position: relative;
     width: 80%;
     padding: 40px;
     border-radius: 3px;
     border: 1px solid #ededed;
-    min-height: 430px;
+    min-height: 610px;
 }
