@@ -14,7 +14,7 @@
         <div class = "cover-content">
         <header class="post-header">
           <h1 class="post-title">{{ .Title }}</h1>
-          <p class="post-date">Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time> via <a href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
+          <p class="post-date">Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time> via <a target = "blank" href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
           {{ if (isset .Params "categories") }} | {{ range .Params.categories }}<a class="category" href="/categories/{{ . | urlize }}">#{{ . }}</a> {{ end }}{{ end }}
           {{ if gt .Params.socialScore 0 }} | {{ .Params.socialScore }} shares{{ end }}
           </p>          
