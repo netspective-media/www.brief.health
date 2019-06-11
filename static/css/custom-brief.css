@@ -144,7 +144,7 @@ img {
 }
 .share-btn {
     color: #ffffff!important;
-    font-size: 20px;
+    /*font-size: 20px;*/
     padding: 0.3em;
     width: 3em;
 }
