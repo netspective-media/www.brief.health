@@ -1,3 +1,47 @@
-<footer>
-    
+<footer class="footer-wrap">
+<article class="footer-row-1">
+<div class="row">
+
+<div class="col-md-3">
+<h3>Publications</h3>
+<ul class="foot-menu">
+<li><a target = "blank" href="https://www.netspective.media/">Netspective Media</a></li>
+<li><a target = "blank" href="https://www.healthcareguy.com/">The Healthcare IT Guy</a></li>
+<li><a target = "blank" href="https://www.healthcareguys.com/">Healthcare Guys</a></li>
+<li><a target = "blank" href="https://www.hitsphere.com/">HITSphere</a></li>
+<li><a target = "blank" href="http://www.fedsphere.com/">FEDSphere</a></li>
+<li><a target = "blank" href="http://www.netspective.com/cak/">Netspective CAK</a></li>
+</ul>
+</div>
+
+<div class="col-md-5">
+<h3>Recent Posts</h3>
+  {{ .Render "by-date" }}
+</div>
+
+<div class="col-md-4">
+<h3>Categories</h3>
+ 
+ <div class="form-group">
+	 
+	  
+	<select name="cat" id="cat" class="form-control" onchange="location = this.value;">
+		<option value="">Select</option>
+	 {{ range  $key, $value := .Site.Taxonomies.categories -}}
+	<option value="{{ (printf "%s%s" "categories/" ($key | urlize)) | absURL }}">{{ $key | humanize }}</option>
+	 {{- end }}
+	 
+</select>
+ 
+</div> 
+</div>
+
+</div>		
+</article>  
+
+<article class="footer-row-2 text-center">
+<div class="social"><a target = "blank" href="https://www.facebook.com/healthcareguys"><i class="fab fa-facebook-f font"></i></a> <a target = "blank" href="https://twitter.com/HealthcareGuys"><i class="fab fa-twitter font"></i></a> 
+<a target = "blank" href="https://plus.google.com/101459487750787187310"><i class="fab fa-google-plus-g font"></i></a> <a target = "blank" href="https://www.linkedin.com/company/the-healthcare-guys?trk=company_name"><i class="fab fa-linkedin-in font"></i></a></div>
+<div>© 2005-2019 Netspective Media LLC. All rights reserved.</div>	
+</article>  
 </footer>
