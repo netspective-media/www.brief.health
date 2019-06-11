@@ -26,7 +26,7 @@
     <!-- {{ if or ($paginator.HasPrev) ($paginator.HasNext) -}} -->
     <nav class="pagination-nav side-padding"> 
       <!-- {{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}" class="pagination-newer ">&lt; Newer Posts</a>{{ end }} -->
-      {{ if $paginator.HasNext }}<a  onclick="loadMore.loadCnt()" class="pagination-older nextpage">Load More ...</a>{{ end }}
+      {{ if $paginator.HasNext }}<a  onclick="loadMore.loadCnt()" class="loadmore pagination-older nextpage">Load More ...</a>{{ end }}
     </nav>
     <!-- {{ end -}} -->
     {{ partial "footer.html" . }}

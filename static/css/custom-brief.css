@@ -222,6 +222,13 @@ img {
     border: 1px solid #ededed;
     min-height: 610px;
 }
+.loadmore {
+    float: inherit!important;
+    margin: 0 auto;
+    width: 115px;
+    display: block;
+    text-align: center;
+}
 /* footer */
 .footer-wrap {
     border-top: 1px solid #dcdcdc; 
