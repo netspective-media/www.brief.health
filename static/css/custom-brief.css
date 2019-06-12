@@ -165,6 +165,7 @@ img {
     font-weight: 700!important;
     font-size: 14px!important;
     letter-spacing: 0.5px!important;
+    cursor: pointer;
 }
 .pagination-nav {
     margin: 0 auto!important;
