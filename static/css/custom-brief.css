@@ -314,3 +314,10 @@ img {
     
     
 }
+
+ .card-text.ch-limit p{
+    display:none;
+}
+.card-text.ch-limit p:first-child{
+    display:block;
+}
