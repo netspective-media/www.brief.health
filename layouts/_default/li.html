@@ -13,6 +13,13 @@
         <img src="{{.Params.featuredimage | absURL }}" class="card-img" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}>
       </picture>
     </div>
+
+        {{ else }}
+     <div class="card-img-container">
+         <picture>
+             <img class="card-img" src="/img/no-image-article.jpg">
+        </picture>
+      </div>
     {{- end }}
   <article class="card-body">
     <h2 class="card-title">{{ .Title }}</h2>
