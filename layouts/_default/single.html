@@ -4,10 +4,13 @@
   <body class="single-body">
     {{ partial "nav-bar.html" . }}
     <main class="content side-text-padding single-blog-card inner-card">
-              
-        {{ if isset .Params "featuredimage" }}
+      {{ if isset .Params "featuredimage" }}
         <picture class="post-figure m-b-15">
             <a href="{{ .Params.link }}"><img src="{{.Params.featuredimage | absURL }}" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}></a>
+        </picture>
+        {{ else }}
+         <picture class="post-figure m-b-15">
+             <img src="/img/no-image-article.jpg">
         </picture>
         {{ end }}
         <article class="post {{ if ne .Params.dropcap false }}dropcase{{ end }}">
