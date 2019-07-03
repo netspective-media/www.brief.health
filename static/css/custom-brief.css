@@ -321,3 +321,90 @@ img {
 .card-text.ch-limit p:first-child{
     display:block;
 }
+/* social share ------------- starts */
+.social-count-area {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.social-share {
+    text-align: left;
+    min-height: 30px;
+    float: right;
+}
+.social-ico {
+    display: inline-block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 15px;
+    color: #eee;
+    border-radius: 3px;
+}
+.face {
+    background: #2a6499;
+}
+.twit {
+    background: #05c7f2;
+}
+.mail {
+    background: #aeaeae;
+}
+.social-count-display .small-bt-row {
+    margin-right: 4px!important;
+    padding-left: 2px!important;
+    padding-right: 4px!important;
+}
+.social-count-display .small-bt-row .col {
+    padding-right: 1px!important;
+    padding-left: 3px!important;
+    font-size: 12px!important;
+    letter-spacing: -0.1px;
+}
+.social-count-display .small-bt-row .col i {
+    font-size: 16px!important;
+    color: #424242cc;
+}
+.cl-f {color:#276898!important}
+.cl-t {color:#0dcbf1!important}
+.cl-m {color:#777!important}
+
+ .small-bt-row {
+    display: inline-block;
+    float: left;
+    height: 25px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.small-bt-row .col {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.small-bt-row .col.a {
+    color: #989898;
+}
+.small-bt-row .col.a i.fas {
+    top: 1px;
+    position: relative;
+}
+.small-bt-row .col.b {
+    color: #666;
+}
+.b-t-1 {
+    border-top: 1px solid #ddd;
+}
+/* social share ------------- ends */

@@ -49,7 +49,7 @@
   
       
   
-      <div class="card-subtext muted-text">
+      <div class="card-subtext muted-text row">
           ${ isset categories }<p class=>${ categories }</p>${ end }
       </div>
     </article>
@@ -81,4 +81,47 @@ function scrollFunction() {
     $(".move_top").css('display', "none")  ;
   }
 }
+
+$(document).ready(function () {
+    var personid = getCookie('personid');
+
+    if (personid != null) {
+        $(".fb-share-push").each(function () {
+            var safeUrl = $(this).attr("data-safe-url");
+            var shareUrl = "https://www.facebook.com/sharer/sharer.php?u={{ $.Site.Params.socialshare }}" + safeUrl;
+            $(this).attr('href', shareUrl);
+            $(this).addClass('fb-share');
+        });
+        $(".twitter-share-push").each(function () {
+            var safeUrl = $(this).attr("data-safe-url");
+            var shareUrl = "https://twitter.com/home?status={{ $.Site.Params.socialshare }}" + safeUrl;
+            $(this).attr('href', shareUrl);
+            $(this).addClass('fb-share');
+        });
+        $(".email-share-push").each(function () {
+            var safeUrl = $(this).attr("data-safe-url");
+            var shareUrl = "mailto:?subject={{ .Title }}&body={{ $.Site.Params.socialshare }}" + safeUrl;
+            $(this).attr('href', shareUrl);
+            $(this).addClass('fb-share');
+        });
+
+    }
+    else {
+
+        $(".twitter-share-push").each(function () {
+            $(this).attr("data-toggle", 'modal');
+            $(this).attr("data-target", '#loginModalCenter');
+        });
+        $(".email-share-push").each(function () {
+            $(this).attr("data-toggle", 'modal');
+            $(this).attr("data-target", '#loginModalCenter');
+        });
+    }
+
+    $('.fb-share').click(function(e) {
+        e.preventDefault();
+        window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+      });
+});
 </script>
