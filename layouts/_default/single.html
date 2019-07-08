@@ -17,8 +17,8 @@
         <div class = "cover-content">
         <header class="post-header">
           <h1 class="post-title">{{ .Title }}</h1>
-          <p class="post-date">Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time> via <a target = "_blank" href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
-          {{ if (isset .Params "categories") }} | {{ range .Params.categories }}<a class="category" href="/categories/{{ . | urlize }}">#{{ . }}</a> {{ end }}{{ end }}
+          <p class="post-date">Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time> via <a style = "margin-left:3px; text-decoration: underline;" target = "_blank" href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
+          {{ if (isset .Params "categories") }} | {{ range .Params.categories }}<a style = "text-decoration: underline;" class="category" href="/categories/{{ . | urlize }}">#{{ . }}</a> {{ end }}{{ end }}
           {{ if gt .Params.socialScore 0 }} | {{ .Params.socialScore }} shares{{ end }}
           </p>          
         </header>
@@ -41,8 +41,8 @@
         </a>
         </div>
         <hr>
-        Continue reading at <a target = "_blank" href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
-        {{ if (isset .Params "categories") }} | {{ range .Params.categories }}<a class="category" href="/categories/{{ . | urlize }}">#{{ . }}</a> {{ end }}{{ end }}        
+        Continue reading at <a style = "text-decoration: underline;" target = "_blank" href="{{ .Params.link }}">{{ .Params.linkBrand }}</a>
+        {{ if (isset .Params "categories") }} | {{ range .Params.categories }}<a style = "text-decoration: underline;" class="category" href="/categories/{{ . | urlize }}">#{{ . }}</a> {{ end }}{{ end }}        
         {{ $related := .Site.RegularPages.Related . | first 5 }}
         {{ with $related }}
         <h3>See Also</h3>
