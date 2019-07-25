@@ -2,12 +2,18 @@
   href="{{ .Permalink }}" class="card blog-card card-bg" rel="bookmark" >
     {{ if isset .Params "featuredimage" }}
     <div class="card-img-container">
- 
+     
       <picture>
         <img src="{{.Params.featuredimage | absURL }}" class="card-img" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}>
       </picture>
     </div>
-    {{ end }}
+     {{ else }}
+    <div class="card-img-container">
+         <picture>
+           <img class="card-img" src="/img/no-image-article.jpg"> 
+        </picture>
+      </div>
+    {{- end }}
   <article class="card-body">
     <h2 class="card-title">{{ .Title }}</h2>
     <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }}</p>
