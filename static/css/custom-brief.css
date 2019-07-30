@@ -39,6 +39,16 @@ img {
     font-weight: 700!important;
 }
 
+.quick-contact {
+    background: #e44417 !important;
+    color: #ffffff !important;
+}
+.sucess-msg{
+    color: #e44417 !important;
+    font-size: 15px !important;
+    margin-bottom: 15px !important;
+}
+
 /* Curated and published */
 .owned {
     font-size: 12px;

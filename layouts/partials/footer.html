@@ -14,12 +14,12 @@
 </ul>
 </div>
 
-<div class="col-md-5">
+<div class="col-md-3">
 <h3>Recent Posts</h3>
   {{ .Render "by-date" }}
 </div>
 
-<div class="col-md-4">
+<div class="col-md-3">
 <h3>Categories</h3>
  
  <div class="form-group">
@@ -27,7 +27,7 @@
 	  
 	<select name="cat" id="cat" class="form-control" onchange="location = this.value;">
 		<option value="">Select</option>
-	 {{ range  $key, $value := .Site.Taxonomies.categories -}}
+	 {{ range   $key, $value := .Site.Taxonomies.categories -}}
 	<option value="{{ (printf "%s%s" "categories/" ($key | urlize)) | absURL }}">{{ $key | humanize }}</option>
 	 {{- end }}
 	 
@@ -35,6 +35,36 @@
  
 </div> 
 </div>
+
+<div class="col-md-3">
+<h3>CONTACT US</h3>
+
+ <form class="gform pure-form pure-form-stacked" method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbzquUEJK4ZCnEKzRkiWgq-mkcyS9QVkgY6b3mkx48buWr_n3Ocz/exec">
+
+      <div style="display:none;" class="thankyou_message">      
+        <span class = "sucess-msg">Thank you for your enquiry</span>
+      </div>
+
+  <div class="form-group">
+       <input type="text" placeholder="Name" class="form-control" name="name" id="firstname">
+       <span class="error" id="name" style="display: none;">The Field Required.</span>
+  </div>
+  <div class="form-group">
+     <input type="email" placeholder="Email" class="form-control" name="email" id="emailaddress">
+     <span class="error" id="email" style="display: none;">The Field Required.</span>
+  </div>
+
+   <div class="form-group">
+       <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+   </div>
+   
+     <div id="cf-submit">
+                     <input type="submit" id="contactsubmit" class="btn btnsubmit quick-contact" value="Submit">
+      </div>  
+</form>
+<script data-cfasync="false" src="/js/form-submission-handler.js"></script>
+</div>	
 
 </div>		
 </article>  
