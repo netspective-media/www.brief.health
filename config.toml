@@ -9,8 +9,8 @@ paginate = 25
 home = ["HTML", "RSS","JSON"]
 
 [params]
-brand = "Health IT Briefing"
-description = "Netspective Media Health IT Briefing"
+title = "Discover the Digital Healthcare Technology Trends, Products and Health IT News | Health IT briefing"
+description = "Health IT briefing is the perfect platform to discover healthcare IT products & solutions, and Health IT Jobs. It showcases digital health IT News with accurate update on digital healthcare technology."
 
 [permalinks]
 post = "/post/:year/:month/:day/:slug/"

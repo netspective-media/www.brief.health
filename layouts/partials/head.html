@@ -2,21 +2,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{{ if not .IsHome }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}</title>
-  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+ <!-- <title>{{ if not .IsHome }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}</title>
+ <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />-->
+  <title>{{ if not .IsHome }}{{ .Title }} &middot; {{ end }}{{ $.Site.Params.title }}</title>
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Summary}}{{end}}" />
 
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="{{.Params.title }}" />
-<meta property="og:description" content="{{.Summary }}">
-<meta property="og:site_name" content="Medigy" />
+<!--<meta property="og:title" content="{{.Params.title }}" />
+<meta property="og:description" content="{{.Summary }}">-->
+<meta property="og:title" content="{{ if not .IsHome }}{{.Params.title }}{{ end }} {{ $.Site.Params.title }}" />
+<meta property="og:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Summary }}{{end}}">
+<meta property="og:site_name" content="Health IT briefing" />
 <meta property="og:image" content="{{.Params.featuredImage }}" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@Medigy" />
-<meta name="twitter:title" content="{{.Params.title }}" />
-<meta name="twitter:description" content="{{.Summary }}" />
+<meta name="twitter:site" content="Health IT briefing" />
+<meta name="twitter:title" content="{{ if not .IsHome }}{{.Params.title }}{{ end }} {{ $.Site.Params.title }}" />
+<meta name="twitter:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Summary }}{{end}}" />
 <meta name="twitter:image" content="{{.Params.featuredImage }}" />
   
  
