@@ -387,6 +387,11 @@ footer {
     padding: 2em 0;
     margin: 2em 0 0 0;
 }
+.error {
+    color: red;
+    margin-left: 5px;
+}
+
 @media screen and (pointer: coarse) {
  .card-hover {
     transform: scale(0.95);
