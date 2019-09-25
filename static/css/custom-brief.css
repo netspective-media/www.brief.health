@@ -418,3 +418,10 @@ img {
     border-top: 1px solid #ddd;
 }
 /* social share ------------- ends */
+.cover-content .breadcrumb {
+    border-bottom:1px solid #f5f5f5!important;
+    background:#fff;
+    padding: 0px 0px 8px 0px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
