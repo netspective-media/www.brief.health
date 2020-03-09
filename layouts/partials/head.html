@@ -23,7 +23,9 @@
 <meta name="twitter:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Summary }}{{end}}" />
 <meta name="twitter:image" content="{{.Params.featuredImage }}" />
   
- 
+
+<link rel="canonical" href="{{ if not .IsHome }}{{.Params.linkOriginal }}{{ else }}https://www.brief.health/{{ end }}">
+
 
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   
@@ -70,6 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   
 </head>
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
