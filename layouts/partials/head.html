@@ -22,7 +22,13 @@
 <meta name="twitter:title" content="{{ if not .IsHome }}{{.Params.title }}{{ end }} {{ $.Site.Params.title }}" />
 <meta name="twitter:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Summary }}{{end}}" />
 <meta name="twitter:image" content="{{.Params.featuredImage }}" />
-  
+{{ if not .IsHome }}
+{{ $url := urls.Parse .Params.linkOriginal  }}	
+<link rel="canonical" href="https://{{ $url.Host }}">
+{{ else }}
+{{ $url := urls.Parse "https://www.brief.health/" }}
+<link rel="canonical" href="https://{{ $url.Host }}">
+{{ end }}
 
 
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
