@@ -3,6 +3,10 @@
   to = "/404.html"
   status = 404
 
- 
+[[redirects]]
+from = "https://www.brief.health/post/*"
+to = "https://www.medigy.com/news/:splat"
+status = 301
+force = true
 
  
