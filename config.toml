@@ -8,6 +8,8 @@ paginate = 25
 [outputs]
 home = ["HTML", "RSS","JSON"]
 
+disableKinds: ["taxonomy","taxonomyTerm"]
+
 [params]
 title = "Discover the Digital Healthcare Technology Trends, Products and Health IT News | Health IT briefing"
 description = "Health IT briefing is the perfect platform to discover healthcare IT products & solutions, and Health IT Jobs. It showcases digital health IT News with accurate update on digital healthcare technology."
@@ -22,7 +24,7 @@ defaultMarkdownHandler = "goldmark"
 unsafe                 = true
 
 [[module.imports]]
-path                   = "gl.infra.medigy.com/medigy-presentation-content/news/openproject-curations.git"
+path                   = "../../../../gl.infra.medigy.com/medigy-presentation-content/news/openproject-curations"
 
 [[module.imports.mounts]]
 source                 = "content"
