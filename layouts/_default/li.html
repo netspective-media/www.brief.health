@@ -10,7 +10,7 @@
       {{ end }}     
       {{ end }}
       <picture>
-        <a href="{{ .Permalink }}"><img src="{{.Params.featuredimage | absURL }}" class="card-img" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}></a>
+        <a href="{{ .Permalink }}"><img src="{{.Params.featuredimage.href | absURL }}" onerror="this.onerror=null; this.src='/img/no-image-article.jpg'" class="card-img" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}></a>
       </picture>
     </div>
 

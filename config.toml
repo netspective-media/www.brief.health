@@ -14,3 +14,20 @@ description = "Health IT briefing is the perfect platform to discover healthcare
 
 [permalinks]
 post = "/post/:year/:month/:day/:slug/"
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark.renderer]
+unsafe                 = true
+
+[[module.imports]]
+path                   = "../../../../gl.infra.medigy.com/medigy-presentation-content/news/openproject-curations"
+
+[[module.imports.mounts]]
+source                 = "content"
+target                 = "content"
+
+[[module.imports.mounts]]
+source                 = "content-auto"
+target                 = "content"

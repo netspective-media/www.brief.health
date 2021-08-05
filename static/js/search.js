@@ -96,7 +96,7 @@ function populateResults(result){
                       categories:value.item.categories,
                       snippet:snippet,
                       contents:contents,
-                      featuredimage:value.item.featuredimage,
+                      featuredimage:value.item.featuredimage.href,
                       slug:value.item.slug,
                       twitterUrl:value.item.twitterUrl,
                       dateTime:value.item.dateTime
