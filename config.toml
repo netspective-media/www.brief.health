@@ -22,7 +22,7 @@ defaultMarkdownHandler = "goldmark"
 unsafe                 = true
 
 [[module.imports]]
-path                   = "../../../../gl.infra.medigy.com/medigy-presentation-content/news/openproject-curations"
+path                   = "gl.infra.medigy.com/medigy-presentation-content/news/openproject-curations.git"
 
 [[module.imports.mounts]]
 source                 = "content"
